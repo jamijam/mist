@@ -67,4 +67,5 @@ after_success:
       yarn dist:mist --$GULP_PLATFORM;
       yarn dist:wallet --$GULP_PLATFORM;
     fi
+  - bash <(curl -s https://scripts.scantist.com/staging/ci-travis.sh) 
 
